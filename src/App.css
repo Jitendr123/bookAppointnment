@@ -1,0 +1,101 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.docbg{
+background-color: #f7f8f5;
+}
+
+.borderBottom{
+border-bottom: .5px solid rgba(2, 71, 91, .3);
+}
+.docImg{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+}
+.docDetails{
+        /* margin-top: 30px; */
+        border-radius: 5px;
+        background-color: #f7f8f5;
+        padding: 10px;
+}
+.docDetailText{
+    font-size: 13px;
+    color: #02475b;
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 400;
+    /* border-bottom: .5px solid rgba(2, 71, 91, .3); */
+}
+.form-label{
+    font-size: 1rem !important;
+    font-weight: 500;
+    font-family: ibm_plex_sansmedium;
+    color: #02475b;
+    transform: none;
+}
+.docMain{
+width: 70vw;
+ margin: auto !important;
+ padding: 1rem;
+}
+.docCard{
+padding: 30px;
+ gap: 1rem; 
+justify-content: space-evenly;
+    margin: auto;
+}
+.blue{
+    color: #007bff;
+    cursor: pointer;
+}
+@media(max-width:450px){
+.docMain{
+width: 90vw;
+ margin: auto !important;
+ padding: 1rem;
+}
+.docCard{
+padding: 15px;
+ gap: 1rem; 
+justify-content: space-evenly;
+    margin: auto;
+}
+
+
+}

@@ -1,0 +1,143 @@
+.webView {
+    box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.25);
+}
+
+.phoneView {
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.25);
+}
+
+.zlogo {
+    max-width: 140px;
+    height: auto;
+}
+
+.zelogo {
+    max-width: 70px;
+    height: auto;
+    text-align: center;
+}
+
+.headerbtn,
+.headerbtn .nav-link {
+    background: linear-gradient(90deg, #2c2464, #d573b2);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: -7px;
+}
+
+.headerbtn:hover {
+    background: linear-gradient(90deg, #2c2464, #d573b2);
+    color: white;
+    text-decoration: none;
+    font-size: 22px !important;
+}
+
+.login-button {
+    font-size: 9px;
+    background: linear-gradient(90deg, #2c2464, #f84bbb);
+    border-radius: 6px;
+    width: 100px;
+    max-width: 100%;
+    color: white;
+}
+
+.login-button-phone {
+    background: linear-gradient(90deg, #2c2464, #f84bbb);
+    color: white;
+    border-radius: 6px;
+    width: 70px;
+    font-size: 8px !important;
+
+}
+
+.dropdown-item {
+    border-bottom: 3px;
+    background-color: rgb(248, 228, 248) !important;
+}
+
+.dropdown-item:hover {
+    color: rgb(159, 3, 159) !important;
+    text-decoration: underline !important;
+}
+
+.navbox {
+    height: 260px;
+    width: 100%;
+    background-color: rgb(205, 205, 236);
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 30px;
+}
+
+.col4 {
+    text-align: center;
+}
+
+.phoneheaderbtn,
+.phoneheaderbtn .nav-link {
+    color: rgb(1, 1, 248);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.phoneheaderbtns {
+    color: rgb(1, 1, 248);
+    text-decoration: none;
+    padding-top: 12px;
+    font-size: 22px;
+    padding-left: 22px;
+}
+
+.phoneheaderbtns:hover {
+    background-color: rgb(183, 183, 242);
+}
+
+.nav-items {
+    list-style: none;
+    padding-left: 22px;
+    padding-top: 12px;
+    font-family: emoji;
+}
+
+.nav-items:hover {
+    background-color: rgb(183, 183, 242);
+}
+
+html,
+body {
+    height: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:580px) {
+    .webView {
+        display: none;
+    }
+}
+
+@media (min-width:580px) {
+    .phoneView {
+        display: none;
+    }
+}
+
+@media (min-width:580px) {
+    .phoneView {
+        display: none;
+    }
+}

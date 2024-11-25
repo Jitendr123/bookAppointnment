@@ -1,0 +1,96 @@
+.heart-loader {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display:inline-block;
+  -webkit-mask:
+     radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+     radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+     linear-gradient(to bottom left, red 43%,transparent 43%) bottom left ,
+     linear-gradient(to bottom right,red 43%,transparent 43%) bottom right;
+  -webkit-mask-size:50% 50%;
+  -webkit-mask-repeat:no-repeat;
+  mask:
+     radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+     radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+     linear-gradient(to bottom left, red 43%,transparent 43%) bottom left ,
+     linear-gradient(to bottom right,red 43%,transparent 43%) bottom right;
+  mask-size: 50% 50%;
+  mask-repeat: no-repeat;
+  background:#EA4C89;
+}
+.heart::before {
+  content:"";
+  display:block;
+  padding-top:100%;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.pulse {
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.echo {
+  animation-duration: 1s;
+  animation-name: echo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  
+  10% {
+    transform: scale(1.1);
+  }
+  
+  20% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes echo {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  
+  10% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
