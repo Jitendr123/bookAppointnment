@@ -77,7 +77,7 @@ function Doc() {
                             <Col className='col-md-4 leftCol bg-white ' style={{ padding: '20px', borderRadius: '1rem' }} >
                                 <img className='docImg' src="../image/docImg.jpeg" alt="" />
                                 <Row style={{ marginTop: '10px' }}>
-                                    <h4 className='borderBottom'>Dr. Tausif Qureshi</h4>
+                                    <h4 className='borderBottom'>Dr. Jitendra Arya</h4>
                                     <p>MBBS MS | 10 Yrs. Exp</p>
                                     <p>ENT Specialist</p>
                                 </Row>
